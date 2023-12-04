@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Lato', sans-serif;
+  overflow: hidden; /* Prevents scrolling */
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-page {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-banner {
+  width: 100%;
+  height: 100%;
+  background: url('../../assets/images/homepage-banner.jpg') no-repeat center center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  text-align: center;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.6); /* Dark overlay */
+    z-index: 1;
+  }
+
+  .banner-content {
+    position: relative;
+    z-index: 2;
+    color: white;
+    padding: 1rem;
+    max-width: 1200px;
+    width: 100%;
+
+    h1 {
+      white-space: nowrap;
+      overflow: hidden;
+      border-right: 3px solid white; /* Cursor effect */
+      animation: typing 5s steps(30, end) infinite, blink-caret 0.75s step-end infinite;
+    }
+  }
+
+  .get-started-button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    transition: background-color 0.3s, transform 0.3s;
+    margin-top: 2rem; /* Adjust this as necessary to position the button */
+    &:hover {
+      background-color: #367c2b; /* Change color on hover */
+    }
+  }
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent; }
+  50% { border-color: white; }
+}
+
+@media (max-width: 768px) {
+  .banner-content h1 {
+    font-size: 1.2rem;
+  }
+
+  .get-started-button {
+    font-size: 1rem;
+    padding: 0.8rem 1.6rem;
+  }
+}

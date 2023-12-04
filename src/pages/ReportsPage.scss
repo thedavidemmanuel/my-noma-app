@@ -1,0 +1,48 @@
+/* ReportsPage.scss */
+
+.reports-container {
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: -20px; /* Adjust the negative margin to pull it up */
+  
+    h1 {
+      color: #333;
+    }
+  
+    div {
+      margin-bottom: 20px;
+  
+      h2 {
+        margin-bottom: 10px;
+      }
+  
+      table {
+        width: 100%;
+        border-collapse: collapse;
+  
+        th, td {
+          padding: 12px;
+          text-align: left;
+          border-bottom: 1px solid #ddd;
+        }
+  
+        th {
+          background-color: #4caf50;
+          color: white;
+        }
+  
+        tbody tr:nth-child(even) {
+          background-color: #f9f9f9;
+        }
+      }
+    }
+  
+    @media (max-width: 768px) {
+      div {
+        overflow-x: auto;
+      }
+    }
+  }
+  

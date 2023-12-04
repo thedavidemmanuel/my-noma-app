@@ -1,0 +1,34 @@
+/* CropsAndFieldsPage.scss */
+
+.crops-and-fields-container {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .input-container {
+    margin-bottom: 15px;
+  }
+  
+  .custom-input {
+    padding: 8px;
+    margin-left: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #ebe2e2;
+    color: black;
+  }
+  
+  .custom-button {
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .custom-button:hover {
+    background-color: #45a049;
+  }
+  

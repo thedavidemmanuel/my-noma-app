@@ -1,0 +1,8 @@
+{
+  "projects": {
+    "my-noma-app": "my-noma-app-26dfa",
+    "default": "my-noma-app-26dfa"
+  },
+  "targets": {},
+  "etags": {}
+}
